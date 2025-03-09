@@ -20,16 +20,16 @@ public class Test {
 
     // List of questions (words, translations, and emojis)
     private String[][] questions = {
-            {"Drill", "drilling", "🛠️"},
-            {"Preview", "review", "👀"},
-            {"Stand", "standing", "🚶"},
-            {"Impaired view", "blurred vision", "👓"},
-            {"Long jump", "long-distance jump", "🏃‍♂️"},
-            {"Hurdle", "obstacle", "🏃‍♂️💨"},
-            {"Helmet", "protective headgear", "⛑️"},
-            {"Skates", "ice skates", "⛸️"},
-            {"Glove", "hand protection", "🧤"},
-            {"Shoulder pad", "shoulder protection", "🏈"}
+            {"Drill", "burg'ulash", "🛠️"},
+            {"Preview", "ko'rib chiqish", "👀"},
+            {"Stand", "turish", "🚶"},
+            {"Impaired view", "ko'rish buzilgan", "👓"},
+            {"Long jump", "uzunlikka sakrash", "🏃‍♂️"},
+            {"Hurdle", "to'siq", "🏃‍♂️💨"},
+            {"Helmet", "dubulg'a", "⛑️"},
+            {"Skates", "konkilar", "⛸️"},
+            {"Glove", "qo'lqop", "🧤"},
+            {"Shoulder pad", "yelka yostig'i", "🏈"}
     };
 
     public Test() {
