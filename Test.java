@@ -18,18 +18,18 @@ public class Test {
     private Timer questionTimer;
     private int timeLeft = 15;
 
-    // Savollar ro'yxati (so'zlar, tarjimalar va emojilar)
+    // List of questions (words, translations, and emojis)
     private String[][] questions = {
-            {"Drill", "burg'ulash", "🛠️"},
-            {"Preview", "ko'rib chiqish", "👀"},
-            {"Stand", "turish", "🚶"},
-            {"Impaired view", "ko'rish buzilgan", "👓"},
-            {"Long jump", "uzunlikka sakrash", "🏃‍♂️"},
-            {"Hurdle", "to'siq", "🏃‍♂️💨"},
-            {"Helmet", "dubulg'a", "⛑️"},
-            {"Skates", "konkilar", "⛸️"},
-            {"Glove", "qo'lqop", "🧤"},
-            {"Shoulder pad", "yelka yostig'i", "🏈"}
+            {"Drill", "drilling", "🛠️"},
+            {"Preview", "review", "👀"},
+            {"Stand", "standing", "🚶"},
+            {"Impaired view", "blurred vision", "👓"},
+            {"Long jump", "long-distance jump", "🏃‍♂️"},
+            {"Hurdle", "obstacle", "🏃‍♂️💨"},
+            {"Helmet", "protective headgear", "⛑️"},
+            {"Skates", "ice skates", "⛸️"},
+            {"Glove", "hand protection", "🧤"},
+            {"Shoulder pad", "shoulder protection", "🏈"}
     };
 
     public Test() {
@@ -37,7 +37,7 @@ public class Test {
         panel = new JPanel();
         panel.setLayout(new BorderLayout());
 
-        // Yuqori qism (Savol, Emoji, Holat)
+        // Top section (Question, Emoji, Status)
         JPanel topPanel = new JPanel(new GridLayout(3, 1));
         statusLabel = new JLabel("", SwingConstants.CENTER);
         questionLabel = new JLabel("", SwingConstants.CENTER);
@@ -48,7 +48,7 @@ public class Test {
         topPanel.add(questionLabel);
         topPanel.add(emojiLabel);
 
-        // Pastki qism (Variantlar va tugma)
+        // Bottom section (Options and Button)
         JPanel bottomPanel = new JPanel(new GridLayout(4, 1));
         options = new JRadioButton[3];
         group = new ButtonGroup();
@@ -59,7 +59,7 @@ public class Test {
             bottomPanel.add(options[i]);
         }
 
-        nextButton = new JButton("Keyingi savol ->");
+        nextButton = new JButton("Next Question ->");
         nextButton.addActionListener(e -> nextQuestion());
         bottomPanel.add(nextButton);
 
@@ -76,14 +76,14 @@ public class Test {
         loadQuestion();
     }
 
-    // Savollarni yuklash va variantlarni tasodifiy yaratish
+    // Load the questions and generate random answer choices
     private void loadQuestion() {
         if (currentQuestion >= questions.length) {
             showResult();
             return;
         }
 
-        statusLabel.setText("Savol: " + (currentQuestion + 1) + "/" + questions.length + "  |  Ball: " + score);
+        statusLabel.setText("Question: " + (currentQuestion + 1) + "/" + questions.length + "  |  Score: " + score);
         questionLabel.setText(questions[currentQuestion][0]);
         emojiLabel.setText(questions[currentQuestion][2]);
         timerLabel.setText("Time: " + timeLeft + " sec");
@@ -98,12 +98,12 @@ public class Test {
         startTimer();
     }
 
-    // Variantlarni tasodifiy shakllantirish
+    // Generate random answer choices
     private String[] generateVariants(int questionIndex) {
         String[] variants = new String[3];
         Random random = new Random();
 
-        variants[0] = questions[questionIndex][1]; // To'g'ri javob
+        variants[0] = questions[questionIndex][1]; // Correct answer
         for (int i = 1; i < 3; i++) {
             int randomIndex;
             do {
@@ -112,7 +112,7 @@ public class Test {
             variants[i] = questions[randomIndex][1];
         }
 
-        // Variantlarni aralashtirish
+        // Shuffle the answer choices
         for (int i = 0; i < 3; i++) {
             int swapIndex = random.nextInt(3);
             String temp = variants[i];
@@ -123,7 +123,7 @@ public class Test {
         return variants;
     }
 
-    // Taymerni boshlash
+    // Start the timer for each question
     private void startTimer() {
         if (questionTimer != null) {
             questionTimer.stop();
@@ -139,7 +139,7 @@ public class Test {
         questionTimer.start();
     }
 
-    // Keyingi savolga o'tish
+    // Move to the next question
     private void nextQuestion() {
         checkAnswer();
         currentQuestion++;
@@ -147,7 +147,7 @@ public class Test {
         loadQuestion();
     }
 
-    // Javobni tekshirish
+    // Check the selected answer
     private void checkAnswer() {
         for (JRadioButton option : options) {
             if (option.isSelected()) {
@@ -162,10 +162,10 @@ public class Test {
         }
     }
 
-    // Natijani ko'rsatish
+    // Show the final result
     private void showResult() {
         questionTimer.stop();
-        JOptionPane.showMessageDialog(frame, "Test yakunlandi!\nTo'g'ri javoblar: " + correctAnswers + "\nNoto'g'ri javoblar: " + incorrectAnswers + "\nUmumiy ball: " + score);
+        JOptionPane.showMessageDialog(frame, "Test Completed!\nCorrect Answers: " + correctAnswers + "\nIncorrect Answers: " + incorrectAnswers + "\nTotal Score: " + score);
         System.exit(0);
     }
 
