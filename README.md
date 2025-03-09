@@ -1,9 +1,34 @@
+# 📚 Java Test Platform
+
+Welcome to **Java Test Platform**! 🚀 This is a simple but effective quiz application built with **Java Swing**. It provides an interactive way to test and enhance vocabulary skills with multiple-choice questions and a countdown timer. 
+
+## 📸 Preview
+![App Screenshot](./banner.png)
+
+## 🎯 Features
+- ⏳ **Timed Questions**: Each question has a 15-second timer.
+- 🎭 **Randomized Options**: Answer choices are shuffled for each question.
+- 🏆 **Scoring System**: Correct answers earn points.
+- 🔄 **Automatic Progression**: Moves to the next question automatically.
+- ✅ **Final Score Summary**: Displays correct, incorrect answers, and total score at the end.
+
+## 🛠 Installation & Usage
+1. **Clone the Repository**
+   ```sh
+   git clone https://github.com/Iqbolshoh/java-test-platform.git
+   cd java-test-platform
+   ```
+2. **Run the Application**
+   - Open the project in your favorite **Java IDE** (IntelliJ, Eclipse, or NetBeans).
+   - Compile and run `Test.java`.
+   - Enjoy the quiz! 🎉
+
 ## 🖥 Technologies Used
 <div style="display: flex; flex-wrap: wrap; gap: 5px;">
-    <img src="https://img.shields.io/badge/HTML-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" alt="HTML">
-    // java
+    <img src="https://img.shields.io/badge/Java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java">
+    <img src="https://img.shields.io/badge/Swing-%23007396.svg?style=for-the-badge&logo=java&logoColor=white" alt="Swing">
+    <img src="https://img.shields.io/badge/AWT-%23FFA500.svg?style=for-the-badge&logo=java&logoColor=white" alt="AWT">
 </div>
-
 ---
 
 ## 🤝 Contributing  
