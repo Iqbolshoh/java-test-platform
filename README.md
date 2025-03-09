@@ -1,6 +1,6 @@
 # 📚 Java Test Platform
 
-Welcome to **Java Test Platform**! 🚀 This is a simple but effective quiz application built with **Java Swing**. It provides an interactive way to test and enhance vocabulary skills with multiple-choice questions and a countdown timer. 
+Welcome to **Java Test Platform**! 🚀 This is a simple but effective quiz application built with **Java Swing**. It provides an interactive way to test and enhance vocabulary skills with multiple-choice questions and a countdown timer.
 
 ## 📸 Preview
 ![App Screenshot](./banner.png)
@@ -11,6 +11,9 @@ Welcome to **Java Test Platform**! 🚀 This is a simple but effective quiz appl
 - 🏆 **Scoring System**: Correct answers earn points.
 - 🔄 **Automatic Progression**: Moves to the next question automatically.
 - ✅ **Final Score Summary**: Displays correct, incorrect answers, and total score at the end.
+- 🎨 **User-Friendly Interface**: Simple and interactive GUI for better user experience.
+- 📊 **Performance Tracking**: Keeps track of the user's score throughout the test.
+- 🔁 **Replay Option**: Restart the test after completion.
 
 ## 🛠 Installation & Usage
 1. **Clone the Repository**
@@ -18,7 +21,7 @@ Welcome to **Java Test Platform**! 🚀 This is a simple but effective quiz appl
    git clone https://github.com/Iqbolshoh/java-test-platform.git
    cd java-test-platform
    ```
-2. **Run the Application**
+2. **Compile and Run the Application**
    - Open the project in your favorite **Java IDE** (IntelliJ, Eclipse, or NetBeans).
    - Compile and run `Test.java`.
    - Enjoy the quiz! 🎉
@@ -29,7 +32,9 @@ Welcome to **Java Test Platform**! 🚀 This is a simple but effective quiz appl
     <img src="https://img.shields.io/badge/Swing-%23007396.svg?style=for-the-badge&logo=java&logoColor=white" alt="Swing">
     <img src="https://img.shields.io/badge/AWT-%23FFA500.svg?style=for-the-badge&logo=java&logoColor=white" alt="AWT">
 </div>
----
+
+## 📜 License
+This project is licensed under the **MIT License** – feel free to modify and distribute it as needed.
 
 ## 🤝 Contributing  
 
