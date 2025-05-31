@@ -36,7 +36,7 @@ Welcome to **Java Test Platform**! 🚀 This is a simple but effective quiz appl
 ## 📜 License
 This project is open-source and available under the **MIT License**.
 
-## 🤝 Contributing  
+## 🤝 Contributing
 🎯 Contributions are welcome! If you have suggestions or want to enhance the project, feel free to fork the repository and submit a pull request.
 
 ## 📬 Connect with Me  
